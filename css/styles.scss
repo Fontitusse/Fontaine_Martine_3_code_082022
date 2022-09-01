@@ -516,7 +516,7 @@ h3 {
       mix-blend-mode: lighten;
     }
   
-    &__btn:hover {
+    &__btn:active {
       .menu__like {
         &--noBg {
           opacity: 0;
@@ -614,7 +614,7 @@ h3 {
       transition-duration: 0.5s;
     }
   
-    &:hover &__confirmation {
+    &:active &__confirmation {
       margin-right: -1rem;
     }
   
@@ -631,7 +631,7 @@ h3 {
   
     }
   
-    &:hover &__wrapIcon {
+    &:active &__wrapIcon {
       transform: rotate(0);
     }
   
@@ -657,7 +657,7 @@ h3 {
 
 @keyframes itemAppear {
   from {
-    transform: scale(0)
+    transform: scale(0);
   }
   to {
     transform: scale(1);
@@ -666,7 +666,7 @@ h3 {
 
 @-webkit-keyframes itemAppear {
   from {
-    -webkit-transform: scale(0)
+    -webkit-transform: scale(0);
   }
   to {
     -webkit-transform: scale(1);
@@ -727,6 +727,25 @@ h3 {
             footer h3 {
               text-align: center;
             }
+
+
+            .menu__btn:hover {
+              .menu__like {
+                &--noBg {
+                  opacity: 0;
+                }
+              }
+            }
+
+            .menuItem:hover .menuItem__confirmation {
+              margin-right: -1rem;
+            }
+
+            .menuItem:hover .menuItem__wrapIcon {
+              transform: rotate(0);
+            }
+
+
       }
 
 
