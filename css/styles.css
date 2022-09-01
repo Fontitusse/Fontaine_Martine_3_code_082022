@@ -46,8 +46,8 @@
 }
 /* Add animation to "page content" */
 .animate-bottom {
-  -webkit-animation: load 3s;
-  animation: load 3s;
+  -webkit-animation: load 3s ease-in-out;
+  animation: load 3s ease-in-out;
 }
 
 @-webkit-keyframes load {
