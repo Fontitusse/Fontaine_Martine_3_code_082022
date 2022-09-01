@@ -204,7 +204,7 @@ h3 {
     height:auto;
     text-align: center;
     font-size: 100%;
-	  padding: 0.75rem 1.5rem;
+	  padding: 1rem 1.5rem;
     font-weight: bold;
     margin: 0% 5px 5px 5px;
     border-radius:8px;
@@ -335,7 +335,19 @@ h3 {
         .change-icon:active > .fa + .fa {
         display: inherit;
         color: $color-primary;
+        animation: bg-heart 1000ms 150ms both;
+        opacity:-1;
         }
+
+
+        @keyframes bg-heart{
+            0% {opacity:.1;}
+            10%, 20% {opacity:.5;}
+            50% {opacity:.8;}
+            70%, 100% {opacity:1;}
+        }
+
+
 
        .fa-heart {
         font-size:180%;
