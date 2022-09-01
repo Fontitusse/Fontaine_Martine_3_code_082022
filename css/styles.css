@@ -649,6 +649,37 @@ footer a {
   .change-icon:hover > .fa + .fa {
     display: inherit;
     color: #9356DC;
+    -webkit-animation: bg-heart 1000ms 150ms both;
+            animation: bg-heart 1000ms 150ms both;
+    opacity: -1;
+  }
+  @-webkit-keyframes bg-heart {
+    0% {
+      opacity: 0.1;
+    }
+    10%, 20% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    70%, 100% {
+      opacity: 1;
+    }
+  }
+  @keyframes bg-heart {
+    0% {
+      opacity: 0.1;
+    }
+    10%, 20% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    70%, 100% {
+      opacity: 1;
+    }
   }
   footer h3 {
     text-align: center;

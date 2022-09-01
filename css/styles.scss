@@ -711,7 +711,18 @@ h3 {
             .change-icon:hover > .fa + .fa {
             display: inherit;
             color: $color-primary;
-            }
+            animation: bg-heart 1000ms 150ms both;
+            opacity:-1;
+        }
+
+
+        @keyframes bg-heart{
+            0% {opacity:.1;}
+            10%, 20% {opacity:.5;}
+            50% {opacity:.8;}
+            70%, 100% {opacity:1;}
+        }
+            
 
             footer h3 {
               text-align: center;
