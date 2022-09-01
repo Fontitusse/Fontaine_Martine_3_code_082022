@@ -145,7 +145,7 @@ form {
     background-color: #dfd9d9;
     margin-top: 0%;
 & i {
-    width: 10%;
+    width:5%;
 }
 }
 
@@ -668,12 +668,6 @@ h3 {
 
        @media only screen and (min-width:600px) {
         /* For desktop: */
-
-        body {
-          padding-left: 10%;
-          padding-right: 10%;
-        }
-
 
         .container_fonction, .container_restau, footer ol {
             display: flex; 
