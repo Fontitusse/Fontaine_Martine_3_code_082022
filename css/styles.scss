@@ -124,6 +124,7 @@ $color-tertiary: #99E2D0;
   }
 
 
+  /*Entête*/
 header
 {
     text-align: center;
@@ -141,10 +142,6 @@ header
     color: #000000;
 }
 }
-
-
-
-
 
 .lieu {
     padding-bottom:20px;
@@ -193,6 +190,8 @@ input {
 }
 
 
+/*Titres*/
+
 h1 {
     font-size:170%;
     font-family: 'Shrikhand', cursive;
@@ -213,6 +212,8 @@ h3 {
     font-size: 100%;
     text-align:left;
 }
+
+/*Texte*/
 
 .txt {
     font-size: 100%;
@@ -437,7 +438,7 @@ h3 {
 
 
         
- /***Cartes**/
+ /*Cartes*/
 
  #a-la-francaise .image {
   background-image:url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -648,6 +649,41 @@ h3 {
     }
   }
   
+  @keyframes itemAppear {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @-webkit-keyframes itemAppear {
+    from {
+      -webkit-transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+  
+  @-moz-keyframes itemAppear {
+    from {
+      -moz-transform: scale(0);
+    }
+    to {
+      -moz-transform: scale(1);
+    }
+  }
+  
+  @-o-keyframes itemAppear {
+    from {
+      -o-transform: scale(0);
+    }
+    to {
+      -o-transform: scale(1);
+    }
+  }
   
   
   .wrapBtn {
@@ -663,41 +699,6 @@ h3 {
   }
 
 
-@keyframes itemAppear {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-@-webkit-keyframes itemAppear {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
-
-@-moz-keyframes itemAppear {
-  from {
-    -moz-transform: scale(0);
-  }
-  to {
-    -moz-transform: scale(1);
-  }
-}
-
-@-o-keyframes itemAppear {
-  from {
-    -o-transform: scale(0);
-  }
-  to {
-    -o-transform: scale(1);
-  }
-}
 
 
 
