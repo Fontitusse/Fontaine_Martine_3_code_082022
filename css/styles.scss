@@ -481,13 +481,6 @@ h3 {
     }
   }
   
-  .heroImg {
-    max-width: 100%;
-    max-height: 32rem;
-    width: 100%;
-    object-fit: cover;
-  }
-  
   .menu {
     margin-top: -4rem;
     border-radius: 2rem 2rem 0 0;
@@ -645,12 +638,12 @@ h3 {
       display:flex;
       align-items:center;
       justify-content:center;
-      transition-duration: 0.5s;
-      
+      transition-duration: 0.3s;
     }
   
-    &:active > &__confirmation {
+    &:active > &__confirmation, &:hover &__confirmation {
       margin-right: -1rem;
+
     }
   
     &__wrapIcon {
