@@ -524,7 +524,7 @@ footer a {
   justify-content: center;
   transition-duration: 0.3s;
 }
-.menuItem:active > .menuItem__confirmation, .menuItem:hover .menuItem__confirmation {
+.menuItem:active > .menuItem__confirmation, .menuItem:hover > .menuItem__confirmation {
   margin-right: -1rem;
 }
 .menuItem__wrapIcon {
@@ -617,6 +617,14 @@ footer a {
   .change-icon:hover > .fa + .fa {
     display: inherit;
     color: #9356DC;
+    background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
   }
   footer h3 {
     text-align: center;

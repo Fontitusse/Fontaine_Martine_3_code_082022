@@ -641,7 +641,7 @@ h3 {
       transition-duration: 0.3s;
     }
   
-    &:active > &__confirmation, &:hover &__confirmation {
+    &:active > &__confirmation, &:hover > &__confirmation {
       margin-right: -1rem;
 
     }
@@ -755,8 +755,19 @@ h3 {
             }
     
             .change-icon:hover > .fa + .fa {
-            display: inherit;
-            color: $color-primary;
+              display: inherit;
+              color: $color-primary;
+              background:-moz-linear-gradient(top, $color-primary 0%, $color-secondary 100%);
+              background:-o-linear-gradient(top, $color-primary 0%, $color-secondary 100%);
+              background: -webkit-linear-gradient(top, $color-primary 0%,$color-secondary 100%); 
+              background: linear-gradient(to bottom, $color-primary 0%,$color-secondary 100%);
+              -webkit-background-clip: text;
+              -moz-background-clip: text;
+              -o-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color:transparent;
+              -moz-text-fill-color:transparent;
+              -o-text-fill-color:transparent;
         }
 
 
