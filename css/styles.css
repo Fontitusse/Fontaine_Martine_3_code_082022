@@ -360,23 +360,6 @@ footer a {
   background-size: contain;
 }
 
-.header--withBackArrow {
-  position: relative;
-}
-.header__arrow {
-  position: absolute;
-  left: 2rem;
-  height: 2rem;
-  width: 2rem;
-  top: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-50%);
-  font-size: 1.2rem;
-  color: black;
-}
-
 .menu {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
