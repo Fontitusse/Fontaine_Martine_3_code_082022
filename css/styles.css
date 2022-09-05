@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*Page d'accueil*/
 .bloc_page {
   font-family: "Roboto", sans-serif;
 }
@@ -44,7 +45,6 @@
     opacity: 0;
   }
 }
-/* Add animation to "page content" */
 .animate-bottom {
   -webkit-animation: load 3s ease-in-out;
   animation: load 3s ease-in-out;
@@ -283,8 +283,11 @@ h3 {
   background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  -o-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
 }
 
 .fa-heart {
@@ -464,6 +467,15 @@ footer a {
   padding-bottom: 0.5rem;
   font-weight: normal;
 }
+.submenu__title::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 
 .menuItem {
   background-color: white;
@@ -613,11 +625,6 @@ footer a {
   .change-icon:hover > .fa + .fa {
     display: inherit;
     color: #9356DC;
-    background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   footer h3 {
     text-align: center;
