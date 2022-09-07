@@ -2,6 +2,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes load {
+  from {
+    transform: translateY(9999px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes load {
+  from {
+    -webkit-transform: translateY(9999px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes itemAppear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes itemAppear {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
 /*Page d'accueil*/
 .bloc_page {
   font-family: "Roboto", sans-serif;
@@ -26,47 +78,11 @@
           animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    opacity: 0;
-  }
-}
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  to {
-    transform: rotate(360deg);
-    opacity: 0;
-  }
-}
 .animate-bottom {
   -webkit-animation: load 3s ease-in-out;
   animation: load 3s ease-in-out;
 }
 
-@-webkit-keyframes load {
-  from {
-    -webkit-transform: translateY(9999px);
-  }
-  to {
-    -webkit-transform: translateY(0);
-  }
-}
-@keyframes load {
-  from {
-    transform: translateY(9999px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
 /*Entête*/
 header {
   text-align: center;
@@ -532,22 +548,6 @@ footer a {
   color: #99E2D0;
 }
 
-@keyframes itemAppear {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes itemAppear {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
 .wrapBtn {
   display: flex;
   text-decoration: none;

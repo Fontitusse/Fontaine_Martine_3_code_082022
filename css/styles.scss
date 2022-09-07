@@ -36,6 +36,107 @@ $color-tertiary: #99E2D0;
     }
   }
 
+
+  @keyframes spin {
+    from { transform: rotate(0deg);
+    opacity: 1;}
+    to {transform: rotate(360deg);
+    opacity: 0;}
+  }
+
+
+  @-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg);
+     opacity:1;}
+    to {-webkit-transform: rotate(360deg);
+     opacity:0;
+     }
+   }
+ 
+   @-moz-keyframes spin {
+     from { -moz-transform: rotate(0deg);
+      opacity:1;}
+     to {-moz-transform: rotate(360deg);
+      opacity:0;
+      }
+    }
+ 
+    @-o-keyframes spin {
+     from { -o-transform: rotate(0deg);
+      opacity:1;}
+     to {-o-transform: rotate(360deg);
+      opacity:0;
+      }
+    }
+   
+   
+
+
+   @keyframes load {
+    from {transform: translateY(9999px);}
+     to{transform: translateY(0);}
+   }
+
+
+   @-webkit-keyframes load {
+    from {-webkit-transform: translateY(9999px);
+   }
+    to {-webkit-transform: translateY(0);}
+  }
+
+  @-moz-keyframes load {
+    from {-moz-transform: translateY(9999px);
+   }
+    to {-moz-transform: translateY(0);}
+  }
+
+  @-o-keyframes load {
+    from {-o-transform: translateY(9999px);
+   }
+    to {-o-transform: translateY(0);}
+  }
+  
+  
+
+
+
+  @keyframes itemAppear {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @-webkit-keyframes itemAppear {
+    from {
+      -webkit-transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+  
+  @-moz-keyframes itemAppear {
+    from {
+      -moz-transform: scale(0);
+    }
+    to {
+      -moz-transform: scale(1);
+    }
+  }
+  
+  @-o-keyframes itemAppear {
+    from {
+      -o-transform: scale(0);
+    }
+    to {
+      -o-transform: scale(1);
+    }
+  }
+
+
 /*Page d'accueil*/
 
 
@@ -64,64 +165,11 @@ $color-tertiary: #99E2D0;
   }
 
  
-  @-webkit-keyframes spin {
-   from { -webkit-transform: rotate(0deg);
-    opacity:1;}
-   to {-webkit-transform: rotate(360deg);
-    opacity:0;
-    }
-  }
-
-  @-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg);
-     opacity:1;}
-    to {-moz-transform: rotate(360deg);
-     opacity:0;
-     }
-   }
-
-   @-o-keyframes spin {
-    from { -o-transform: rotate(0deg);
-     opacity:1;}
-    to {-o-transform: rotate(360deg);
-     opacity:0;
-     }
-   }
-  
-  @keyframes spin {
-    from { transform: rotate(0deg);
-    opacity: 1;}
-    to {transform: rotate(360deg);
-    opacity: 0;}
-  }
-
  .animate-bottom {
     -webkit-animation: load 3s ease-in-out;
     animation: load 3s ease-in-out;
   }
   
-  @-webkit-keyframes load {
-    from {-webkit-transform: translateY(9999px);
-   }
-    to {-webkit-transform: translateY(0);}
-  }
-
-  @-moz-keyframes load {
-    from {-moz-transform: translateY(9999px);
-   }
-    to {-moz-transform: translateY(0);}
-  }
-
-  @-o-keyframes load {
-    from {-o-transform: translateY(9999px);
-   }
-    to {-o-transform: translateY(0);}
-  }
-  
-  @keyframes load {
-   from {transform: translateY(9999px);}
-    to{transform: translateY(0);}
-  }
 
 
   /*Entête*/
@@ -649,42 +697,6 @@ h3 {
     }
   }
   
-  @keyframes itemAppear {
-    from {
-      transform: scale(0);
-    }
-    to {
-      transform: scale(1);
-    }
-  }
-  
-  @-webkit-keyframes itemAppear {
-    from {
-      -webkit-transform: scale(0);
-    }
-    to {
-      -webkit-transform: scale(1);
-    }
-  }
-  
-  @-moz-keyframes itemAppear {
-    from {
-      -moz-transform: scale(0);
-    }
-    to {
-      -moz-transform: scale(1);
-    }
-  }
-  
-  @-o-keyframes itemAppear {
-    from {
-      -o-transform: scale(0);
-    }
-    to {
-      -o-transform: scale(1);
-    }
-  }
-  
   
   .wrapBtn {
     display: flex;
@@ -697,10 +709,6 @@ h3 {
     @include button(primary);
     cursor: pointer;
   }
-
-
-
-
 
 
 
