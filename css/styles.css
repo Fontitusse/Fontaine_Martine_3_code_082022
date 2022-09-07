@@ -2,24 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@keyframes spin {
+@-webkit-keyframes load {
   from {
-    transform: rotate(0deg);
-    opacity: 1;
+    -webkit-transform: translateY(9999px);
   }
   to {
-    transform: rotate(360deg);
-    opacity: 0;
-  }
-}
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    opacity: 0;
+    -webkit-transform: translateY(0);
   }
 }
 @keyframes load {
@@ -30,12 +18,24 @@
     transform: translateY(0);
   }
 }
-@-webkit-keyframes load {
-  from {
-    -webkit-transform: translateY(9999px);
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    opacity: 1;
   }
-  to {
-    -webkit-transform: translateY(0);
+  100% {
+    -webkit-transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
   }
 }
 @keyframes itemAppear {
@@ -64,8 +64,8 @@
   left: 50%;
   top: 50%;
   opacity: 1;
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   margin: -76px 0 0 -76px;
   border: #99E2D0 16px solid;
   border-top: #9356DC 16px solid;
@@ -436,7 +436,7 @@ footer a {
   justify-content: center;
   mix-blend-mode: lighten;
 }
-.menu__btn:active .menu__like--noBg {
+.menu__btn:hover .menu__like--noBg {
   opacity: 0;
 }
 
