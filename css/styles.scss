@@ -161,6 +161,8 @@ $color-tertiary: #99E2D0;
 
  .animate-bottom {
     -webkit-animation: load 3s ease-in-out;
+    -moz-animation: load 3s ease-in-out;
+    -o-animation: load 3s ease-in-out;
     animation: load 3s ease-in-out;
   }
 
@@ -658,12 +660,15 @@ h3 {
       display:flex;
       align-items:center;
       justify-content:center;
-      transition-duration: 0.3s;
+      transition-duration: 0.5s;
     }
   
     &:active > &__confirmation, &:hover > &__confirmation {
       margin-right: -1rem;
+    }
 
+    &:active > &__confirmation + &:active > &__confirmation {
+      margin-right: -1em;
     }
   
     &__wrapIcon {

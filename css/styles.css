@@ -525,10 +525,13 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 .menuItem:active > .menuItem__confirmation, .menuItem:hover > .menuItem__confirmation {
   margin-right: -1rem;
+}
+.menuItem:active > .menuItem__confirmation + .menuItem:active > .menuItem__confirmation {
+  margin-right: -1em;
 }
 .menuItem__wrapIcon {
   height: 1.6rem;
