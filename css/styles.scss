@@ -48,10 +48,10 @@ $color-tertiary: #99E2D0;
     to {-moz-transform: translateY(0);}
   }
 
-  @-o-keyframes load {
-    from {-o-transform: translateY(9999px);
+  @-ms-keyframes load {
+    from {-ms-transform: translateY(9999px);
    }
-    to {-o-transform: translateY(0);}
+    to {-ms-transform: translateY(0);}
   }
   
   @keyframes load {
@@ -76,7 +76,7 @@ $color-tertiary: #99E2D0;
   }
 
 
-  @-o-keyframes spin {
+  @-ms-keyframes spin {
     0% { -webkit-transform: rotate(0deg);
     opacity:1;}
     100% {-webkit-transform: rotate(360deg);
@@ -119,12 +119,12 @@ $color-tertiary: #99E2D0;
     }
   }
   
-  @-o-keyframes itemAppear {
+  @-ms-keyframes itemAppear {
     from {
-      -o-transform: scale(0);
+      -ms-transform: scale(0);
     }
     to {
-      -o-transform: scale(1);
+      -ms-transform: scale(1);
     }
   }
   
@@ -150,7 +150,7 @@ $color-tertiary: #99E2D0;
     border-radius: 50%;
     -webkit-animation: spin 3s ease;
     -moz-animation: spin 3s ease;
-    -o-animation: spin 3s ease;
+    -ms-animation: spin 3s ease;
     animation: spin 3s ease;
     transform: scaleX(0.5);
     animation-fill-mode: forwards;
@@ -162,7 +162,7 @@ $color-tertiary: #99E2D0;
  .animate-bottom {
     -webkit-animation: load 3s ease-in-out;
     -moz-animation: load 3s ease-in-out;
-    -o-animation: load 3s ease-in-out;
+    -ms-animation: load 3s ease-in-out;
     animation: load 3s ease-in-out;
   }
 
@@ -412,16 +412,16 @@ h3 {
         display: inherit;
         color: $color-primary;
         background:-moz-linear-gradient(top, $color-primary 0%, $color-secondary 100%);
-        background:-o-linear-gradient(top, $color-primary 0%, $color-secondary 100%);
+        background:-ms-linear-gradient(top, $color-primary 0%, $color-secondary 100%);
         background: -webkit-linear-gradient(top, $color-primary 0%,$color-secondary 100%); 
         background: linear-gradient(to bottom, $color-primary 0%,$color-secondary 100%);
         -webkit-background-clip: text;
         -moz-background-clip: text;
-        -o-background-clip: text;
+        -ms-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color:transparent;
         -moz-text-fill-color:transparent;
-        -o-text-fill-color:transparent;
+        -ms-text-fill-color:transparent;
         }
 
 
@@ -749,16 +749,16 @@ h3 {
               display: inherit;
               color: $color-primary;
               background:-moz-linear-gradient(top, $color-primary 0%, $color-secondary 100%);
-              background:-o-linear-gradient(top, $color-primary 0%, $color-secondary 100%);
+              background:-ms-linear-gradient(top, $color-primary 0%, $color-secondary 100%);
               background: -webkit-linear-gradient(top, $color-primary 0%,$color-secondary 100%); 
               background: linear-gradient(to bottom, $color-primary 0%,$color-secondary 100%);
               -webkit-background-clip: text;
               -moz-background-clip: text;
-              -o-background-clip: text;
+              -ms-background-clip: text;
               background-clip: text;
               -webkit-text-fill-color:transparent;
               -moz-text-fill-color:transparent;
-              -o-text-fill-color:transparent;
+              -ms-text-fill-color:transparent;
         }
 
 
