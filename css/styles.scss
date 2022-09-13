@@ -138,8 +138,9 @@ $color-tertiary: #99E2D0;
 
 
 
-.bloc_page {
+.bloc-page {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 #loader {
@@ -189,18 +190,25 @@ header
 }
 
 .lieu {
-    padding-bottom:20px;
-    background-color: #F2F2F2;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom:15px;
+    background-color: rgb(245, 243, 243);
+    margin-bottom: 40px;
     
 & h2 {
-    font-size: 120%;
+    font-size: 140%;
+    font-weight: bold;
     margin-left: 20%;
     margin-right: 20%;
+    margin-bottom: 15px;
+    margin-top: -1em;
 }
 
 & .txt {
-    margin-left: 10%;
-    margin-right: 10%;
+  font-size: 110%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom:-1em;
 }
 }
 
@@ -211,27 +219,21 @@ form {
 
 .box {
     font-size: 100%;
-    padding:10px 30px 10px 30px;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    background-color: #dfd9d9;
+    font-weight: bold;
+    padding:15px 30px 15px 30px;
+    background: #bfbfbf; 
+    background: -moz-linear-gradient(top,  #bfbfbf 0%, #e5e3e3 14%, #e5e3e3 64%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #bfbfbf 0%,#e5e3e3 14%,#e5e3e3 64%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #bfbfbf 0%,#e5e3e3 14%,#e5e3e3 64%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfbfbf', endColorstr='#e5e3e3',GradientType=0 ); /* IE6-9 */
     margin-top: 0%;
+    margin-bottom: 3em;
 & i {
-    width:5%;
-    padding: 0px 10px 0px 50px;
+    width:6%;
+    padding: 0px 10px 0px 0px;
 }
 }
 
-
-
-input {
-    width:auto;
-    background-color: #dfd9d9;
-    border:none;
-
-&:focus {
-    outline:  none;
-}
-}
 
 
 h1 {
@@ -243,7 +245,7 @@ h1 {
 }
 
 h2 {
-    font-size: 110%;
+    font-size: 150%;
     text-align: center;
     margin-left: 2%;
     margin-right: 2%;
@@ -273,23 +275,11 @@ h3 {
     text-align: center;
 }
 
-.border_around {
-    width:auto;
-    height:auto;
-    text-align: center;
-    font-size: 100%;
-	  padding: 1rem 1.5rem;
-    font-weight: bold;
-    margin: 0% 5px 5px 5px;
-    border-radius:8px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    background-color: #f4f0f8;
-}
-
 
 .fonctionnement {
+  font-family: 'Roboto', sans-serif;
     margin-top:20px;
-    margin-bottom:20px;
+    margin-bottom:60px;
     padding-left: 4%;
     padding-right: 4%;
     
@@ -301,24 +291,31 @@ h3 {
   &__border {
     width:auto;
     height:auto;
-    text-align: center;
-    font-size: 100%;
-    padding: 1rem 1.5rem;
+    text-align:left;
+    font-size: 110%;
+    padding:1.5rem 2rem;
     font-weight: bold;
-    margin: 0% 5px 5px 5px;
-    border-radius:8px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    margin: 0% 5px 25px 5px;
+    border-radius:15px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 0px, rgba(17, 17, 26, 0.1) 0px 0px 18px, rgba(17, 17, 26, 0.1) 0px 0px 20px;
     background-color: #f4f0f8;
     position: relative;
     z-index: 1;
     }
 	
   &__border i {
-        margin-right:20px;
-        margin-left:20px;   
-     }
-	}
-
+    font-size: 110%;
+    color: rgb(88, 87, 87);
+    transition: color 3ms linear;
+    margin-right: 15px; 
+      
+        &:hover {
+          color:#9356DC;
+        }
+      }
+  }
+      
+      
      .circle {
         font-size: 100%;
         border: none;
@@ -329,7 +326,7 @@ h3 {
      }
 
      .leftmiddle {
-        top:10px;
+        top:20px;
         left:-15px;
         background-color:$color-primary;
         position:absolute;
@@ -337,6 +334,7 @@ h3 {
      }
 
      .restaurants {
+      font-family: 'Roboto', sans-serif;
         width:92%;
         height:100%;
         background-color:#F2F2F2;
@@ -383,6 +381,11 @@ h3 {
             }
           }
 
+      &__title {
+        font-size: 125%;
+        font-weight: bold;
+      }
+
        &__topright {
         font-size: 100%;
         font-weight: bold;
@@ -403,14 +406,13 @@ h3 {
 	      }
 
         &__txt {
-          font-size:100%;
+          font-size:125%;
           margin: 0px 40px 20px 20px;
          }
 
         &__btn {
           height: 2rem;
           width: 2rem;
-          background-color: transparent;
           border: transparent 0px solid;
           padding: 0;
           display:flex;
