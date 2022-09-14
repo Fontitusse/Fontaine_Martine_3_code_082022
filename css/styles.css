@@ -293,55 +293,31 @@ h3 {
 }
 .restaurant__descrip {
   margin: 20px 40px 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .restaurant__txt {
   font-size: 125%;
   margin: 0px 40px 20px 20px;
 }
-.restaurant__btn {
-  height: 2rem;
-  width: 2rem;
-  border: transparent 0px solid;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.restaurant__btn > .fa + .fa, .restaurant__btn:active > .fa {
+  display: none;
+}
+.restaurant__btn:active > .fa + .fa {
+  display: inherit;
+  background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant .float-right {
+  float: right;
+}
+.restaurant .fa-heart.middle {
+  font-size: 200%;
+  margin-top: -1em;
+  margin-right: -1em;
   cursor: pointer;
-  position: relative;
-  background-color: black;
-}
-.restaurant__btn:hover::before {
-  opacity: 1;
-}
-.restaurant__btn::before {
-  opacity: 0;
-  transition: 0.5s;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-}
-.restaurant__like {
-  transition-duration: 0.25s;
-  background-color: #f6f6f6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  mix-blend-mode: lighten;
-}
-.restaurant__btn:hover .restaurant__like--noBg {
-  opacity: 0;
 }
 
 a.restaurant {
@@ -414,48 +390,21 @@ footer a {
 .menu__title {
   font-family: "Shrikhand", "cursive";
 }
-.menu__btn {
-  height: 2rem;
-  width: 2rem;
-  background-color: transparent;
-  border: transparent 0px solid;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.menu__btn > .fa + .fa, .menu__btn:active > .fa {
+  display: none;
+}
+.menu__btn:active > .fa + .fa {
+  display: inherit;
+  background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu .fa-heart.middle {
+  font-size: 200%;
   cursor: pointer;
-  position: relative;
-  background-color: black;
-}
-.menu__btn:hover::before {
-  opacity: 1;
-}
-.menu__btn::before {
-  opacity: 0;
-  transition: 0.5s;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-}
-.menu__like {
-  transition-duration: 0.25s;
-  background-color: #f6f6f6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  mix-blend-mode: lighten;
-}
-.menu__btn:hover .menu__like--noBg {
-  opacity: 0;
 }
 
 .submenus {
@@ -617,8 +566,17 @@ footer a {
     flex-direction: row;
     justify-content: space-around;
   }
-  .restaurant__btn:hover .restaurant__like--noBg {
-    opacity: 0;
+  .restaurant__btn:hover > .fa {
+    display: none;
+  }
+  .restaurant__btn:hover > .fa + .fa {
+    display: inherit;
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   footer ol {
     display: flex;
@@ -635,8 +593,16 @@ footer a {
     padding-top: 40%;
     background-size: cover;
   }
-  .menu__btn:hover .menu__like--noBg {
-    opacity: 0;
+  .menu__btn:hover > .fa {
+    display: none;
+  }
+  .menu__btn:hover > .fa + .fa {
+    display: inherit;
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .menuItem:hover .menuItem__confirmation {
     margin-right: -1rem;

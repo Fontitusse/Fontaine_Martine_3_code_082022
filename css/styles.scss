@@ -380,86 +380,67 @@ h3 {
             }
           }
 
-      &__title {
-        font-size: 125%;
-        font-weight: bold;
-      }
+        &__title {
+          font-size: 125%;
+          font-weight: bold;
+        }
 
-       &__topright {
-        font-size: 100%;
-        font-weight: bold;
-        position: absolute;
-        top:0px;
-        right:10px;
-        font-size: 18px;
-        background-color: $color-tertiary;
-        color: darken($color-tertiary, 40%);
-        padding:5px;
-      }
+         &__topright {
+          font-size: 100%;
+          font-weight: bold;
+          position: absolute;
+          top:0px;
+          right:10px;
+          font-size: 18px;
+          background-color: $color-tertiary;
+          color: darken($color-tertiary, 40%);
+          padding:5px;
+        }
 
-      &__descrip {
-        margin: 20px 40px 0 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-	      }
+        &__descrip {
+          margin: 20px 40px 0 20px;
+	        }
 
         &__txt {
-          font-size:125%;
-          margin: 0px 40px 20px 20px;
-         }
+            font-size:125%;
+            margin: 0px 40px 20px 20px;
+           }
 
-        &__btn {
-          height: 2rem;
-          width: 2rem;
-          border: transparent 0px solid;
-          padding: 0;
-          display:flex;
-          align-items:center;
-          justify-content:center;
-          cursor: pointer;
-          position: relative;
-          background-color: black;
-          
-          &:hover::before {
-            opacity: 1;
-          }
-          
-          &::before {
-            opacity: 0;
-            transition: 0.5s;
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
-          }
-        }
-      
-        &__like {
-          transition-duration: .25s;
-          background-color: #f6f6f6;
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          display:flex;
-          align-items:center;
-          justify-content:center;
-          mix-blend-mode: lighten;
-        }
-
-        &__btn:hover {
-          .restaurant__like {
-            &--noBg {
-              opacity: 0;
+        &__btn > .fa + .fa, &__btn:active > .fa {
+            display: none;
             }
+          
+        &__btn:active > .fa + .fa {
+            display: inherit;
+            background:-moz-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%); 
+            background: -webkit-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+            background:-ms-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+            background:-o-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+            background: linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -ms-background-clip: text;
+            -o-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color:transparent;
+              }
+
+          & .float-right {
+            float: right;
+           }
+
+          & .fa-heart.middle {
+            font-size:200%;
+            margin-top: -1em;
+            margin-right: -1em;
+            cursor: pointer;
+           }
           }
-        }
-      }
+    
+        
+
+         
+    
     
       
        a.restaurant {
@@ -539,59 +520,33 @@ h3 {
     &__title {
       font-family: "Shrikhand", "cursive";
     }
-  
-    &__btn {
-      height: 2rem;
-      width: 2rem;
-      background-color: transparent;
-      border: transparent 0px solid;
-      padding: 0;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      cursor: pointer;
-      position: relative;
-      background-color: black;
-      
-      &:hover::before {
-        opacity: 1;
+
+    &__btn > .fa + .fa, &__btn:active > .fa {
+      display: none;
       }
-      
-      &::before {
-        opacity: 0;
-        transition: 0.5s;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
-      }
-    }
-  
-    &__like {
-      transition-duration: .25s;
-      background-color: #f6f6f6;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      mix-blend-mode: lighten;
-    }
-  
-    &__btn:hover {
-      .menu__like {
-        &--noBg {
-          opacity: 0;
+
+    &__btn:active > .fa + .fa {
+        display: inherit;
+        background:-moz-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%); 
+        background: -webkit-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+        background:-ms-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+        background:-o-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+        background: linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -ms-background-clip: text;
+        -o-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
         }
-      }
+
+    & .fa-heart.middle {
+      font-size:200%;
+      cursor: pointer;
+     }
     }
-  }
+
+    
   
   .submenus {
     display: grid;
@@ -759,13 +714,25 @@ h3 {
             justify-content:space-around;
            }
 
-           .restaurant__btn:hover {
-            .restaurant__like {
-              &--noBg {
-                opacity: 0;
-              }
+           .restaurant {
+            &__btn:hover > .fa {
+            display: none;
             }
-          }
+          
+            &__btn:hover > .fa + .fa {
+              display: inherit;
+              background:-moz-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%); 
+              background: -webkit-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+              background:-ms-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+              background:-o-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+              background: linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+              -webkit-background-clip: text;
+              -moz-background-clip: text;
+              -ms-background-clip: text;
+              -o-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color:transparent;
+              } }
 
         
           footer {
@@ -790,13 +757,24 @@ h3 {
             background-size: cover;
            }
 
-            .menu__btn:hover {
-              .menu__like {
-                &--noBg {
-                  opacity: 0;
-                }
-              }
+          
+           .menu {
+            &__btn:hover > .fa {
+            display: none;
             }
+          
+            &__btn:hover > .fa + .fa {
+              display: inherit;
+              background:-moz-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%); 
+              background: -webkit-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+              background:-ms-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+              background:-o-linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+              background: linear-gradient(0deg, $color-secondary 0%,$color-primary 100%);
+              -webkit-background-clip: text;
+              -moz-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color:transparent;
+              } }
 
             .menuItem:hover .menuItem__confirmation {
               margin-right: -1rem;
