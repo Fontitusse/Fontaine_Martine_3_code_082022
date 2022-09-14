@@ -209,6 +209,9 @@ h3 {
   position: relative;
   z-index: 1;
 }
+.fonctionnement__border.colorLighten {
+  background: #f2eafb;
+}
 .fonctionnement__border i {
   font-size: 125%;
   color: rgb(126, 126, 126);
@@ -224,7 +227,7 @@ h3 {
   border: none;
   border-radius: 50%;
   background-color: #9356DC;
-  padding: 4px 10px 4px 10px;
+  padding: 6px 8px 6px 8px;
   color: #FFFFFF;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -233,7 +236,7 @@ h3 {
 }
 
 .leftmiddle {
-  top: 25px;
+  top: 23px;
   left: -15px;
   background-color: #9356DC;
   position: absolute;
