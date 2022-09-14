@@ -259,7 +259,7 @@ h3 {
   flex-direction: column;
   border-radius: 20px;
   background-color: #FFFFFF;
-  margin: 0% 0% 4% 0%;
+  margin: 0% 0% 6% 0%;
 }
 .restaurant__photo {
   width: 100%;
@@ -292,11 +292,11 @@ h3 {
   padding: 5px;
 }
 .restaurant__descrip {
-  margin: 20px 40px 0 20px;
+  margin: 5px 40px 0px 15px;
 }
 .restaurant__txt {
   font-size: 125%;
-  margin: 0px 40px 20px 20px;
+  margin: -10px 40px 10px 15px;
 }
 .restaurant__btn > .fa + .fa, .restaurant__btn:active > .fa {
   display: none;
@@ -328,14 +328,13 @@ a.restaurant {
 footer {
   background-color: #272727;
   color: #FFFFFF;
-  padding-top: 4%;
-  padding-right: 4%;
-  padding-left: 4%;
-  padding-bottom: 1%;
+  padding: 4% 4% 1% 4%;
+  margin-top: 20px;
 }
 footer h3 {
+  font-size: 125%;
   font-family: "Shrikhand", cursive;
-  margin-bottom: 2%;
+  margin-bottom: 25px;
 }
 footer ol {
   list-style: none;
@@ -345,7 +344,7 @@ footer ol {
 footer ol li {
   font-size: 100%;
   margin-left: 0%;
-  margin-bottom: 1.5%;
+  margin-bottom: 15px;
 }
 footer a {
   color: #FFFFFF;
