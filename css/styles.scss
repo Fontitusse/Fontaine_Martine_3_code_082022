@@ -282,6 +282,9 @@ h3 {
     margin-bottom:60px;
     padding-left: 4%;
     padding-right: 4%;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
     
   &__title {
     text-align: left;
@@ -292,44 +295,49 @@ h3 {
     width:auto;
     height:auto;
     text-align:left;
-    font-size: 110%;
+    font-size: 100%;
     padding:1.5rem 2rem;
     font-weight: bold;
     margin: 0% 5px 25px 5px;
     border-radius:15px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 0px, rgba(17, 17, 26, 0.1) 0px 0px 18px, rgba(17, 17, 26, 0.1) 0px 0px 20px;
-    background-color: #f4f0f8;
+    background-color: #ffffff;
     position: relative;
     z-index: 1;
-    }
+  }
 	
   &__border i {
-    font-size: 110%;
-    color: rgb(88, 87, 87);
+    font-size: 125%;
+    color: rgb(126, 126, 126);
     -moz-transition: color 3ms linear;
     -webkit-transition: color 3ms linear;
     -ms-transition: color 3ms linear;
     -o-transition: color 3ms linear;
     transition: color 3ms linear;
     margin-right: 15px;
-    &:hover {
-          color:#9356DC;
-        }
       }
+
+    &__border i.color-primary {
+        color:$color-primary;
+    }
   }
       
       
      .circle {
-        font-size: 100%;
+        font-size: 80%;
         border: none;
         border-radius: 50%;
         background-color: $color-primary;
         padding:4px 10px 4px 10px;
         color: #FFFFFF;
-     }
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
 
      .leftmiddle {
-        top:20px;
+        top:25px;
         left:-15px;
         background-color:$color-primary;
         position:absolute;
